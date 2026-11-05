@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 17 | Team Bio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Group 17 — Meet Our Team</h1>
+
+    <img
+        src="img/group17-logo.png"
+        alt="Group 17 circuit logo"
+        class="team-logo"
+    >
+
+    <nav aria-label="Team sections">
+        <button type="button" onclick="showSection('bios')">
+            Team Bios
+        </button>
+        <button type="button" onclick="showSection('vision')">
+            Team Vision
+        </button>
+    </nav>
+</header>
+
+<main>
+    <!-- Team bios -->
+    <div id="bios" class="container">
+
+        <!-- Cristian Flores -->
+        <article class="card cristian-card">
+            <div
+                class="avatar"
+                role="img"
+                aria-label="Cristian Flores initials avatar"
+            >
+                CF
+            </div>
+
+            <h2>Cristian Flores</h2>
+            <p class="member-role">
+                Computer Science Student · Cybersecurity Interest
+            </p>
+
+            <button
+                type="button"
+                onclick="toggleBio('bio1')"
+                aria-controls="bio1"
+            >
+                Show Bio
+            </button>
+
+            <p id="bio1" class="bio">
+                Hi, I'm Cristian! I'm studying computer science at
+                UNC Charlotte and have an interest in cybersecurity.
+                I want to strengthen my programming skills and work
+                with my team to build useful, secure applications.
+                I enjoy learning new tools and improving through practice.
+            </p>
+
+            <div class="moodboard">
+                <h3>My CS Moodboard</h3>
+
+                <div class="inspiration-tags">
+                    <span>🔐 Cybersecurity</span>
+                    <span>🐍 Python</span>
+                    <span>🤝 Teamwork</span>
+                </div>
+
+                <p>
+                    Protecting information, solving problems with code,
+                    and learning through collaboration.
+                </p>
+
+                <a
+                    href="https://www.python.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Explore Python ↗
+                </a>
+            </div>
+        </article>
+
+        <!-- Aurelio Garcia -->
+        <article class="card aurelio-card">
+            <div
+                class="avatar"
+                role="img"
+                aria-label="Aurelio Garcia initials avatar"
+            >
+                AG
+            </div>
+
+            <h2>Aurelio Garcia</h2>
+            <p class="member-role">Group 17 Team Member</p>
+
+            <button
+                type="button"
+                onclick="toggleBio('bio2')"
+                aria-controls="bio2"
+            >
+                Show Bio
+            </button>
+
+            <p id="bio2" class="bio">
+                Aurelio will add his background, computer science
+                interests, and personal goals here.
+            </p>
+
+            <div class="moodboard">
+                <h3>My CS Moodboard</h3>
+                <p>
+                    Aurelio: add your favorite tools, concepts,
+                    images, or links that inspire you in computer science.
+                </p>
+            </div>
+        </article>
+
+        <!-- Sankalp Kumar -->
+        <article class="card sankalp-card">
+            <div
+                class="avatar"
+                role="img"
+                aria-label="Sankalp Kumar initials avatar"
+            >
+                SK
+            </div>
+
+            <h2>Sankalp Kumar</h2>
+            <p class="member-role">Group 17 Team Member</p>
+
+            <button
+                type="button"
+                onclick="toggleBio('bio3')"
+                aria-controls="bio3"
+            >
+                Show Bio
+            </button>
+
+            <p id="bio3" class="bio">
+                Sankalp will add his background, computer science
+                interests, and personal goals here.
+            </p>
+
+            <div class="moodboard">
+                <h3>My CS Moodboard</h3>
+                <p>
+                    Sankalp: add your favorite tools, concepts,
+                    images, or links that inspire you in computer science.
+                </p>
+            </div>
+        </article>
+
+        <!-- Tathya Solanki -->
+        <article class="card tathya-card">
+            <div
+                class="avatar"
+                role="img"
+                aria-label="Tathya Solanki initials avatar"
+            >
+                TS
+            </div>
+
+            <h2>Tathya Solanki</h2>
+            <p class="member-role">Group 17 Team Member</p>
+
+            <button
+                type="button"
+                onclick="toggleBio('bio4')"
+                aria-controls="bio4"
+            >
+                Show Bio
+            </button>
+
+            <p id="bio4" class="bio">
+                Tathya will add his background, computer science
+                interests, and personal goals here.
+            </p>
+
+            <div class="moodboard">
+                <h3>My CS Moodboard</h3>
+                <p>
+                    Tathya: add your favorite tools, concepts,
+                    images, or links that inspire you in computer science.
+                </p>
+            </div>
+        </article>
+
+    </div>
+
+    <!-- Team vision -->
+    <div id="vision" class="container" style="display: none;">
+        <section class="vision-content">
+            <h2>Our Mission</h2>
+            <p>
+                We are Group 17, a team of computer science students
+                learning by building together. Our goal is to create
+                useful applications while improving our programming,
+                problem-solving, and communication skills. We value
+                respect, responsibility, curiosity, and helping each
+                other succeed.
+            </p>
+
+            <h2>Our Values</h2>
+            <p>
+                We welcome different ideas, learn from mistakes,
+                and take responsibility for our contributions.
+                Every team member deserves to be heard and supported.
+            </p>
+
+            <!-- Review these rules together as a team. -->
+            <h2>Proposed Team Rules</h2>
+            <ul>
+                <li>Listen respectfully and let everyone contribute.</li>
+                <li>Divide tasks fairly and agree on deadlines.</li>
+                <li>Share progress and report delays early.</li>
+                <li>Ask for help when stuck and support teammates.</li>
+                <li>Review code together before merging changes.</li>
+                <li>Each member makes at least one meaningful commit.</li>
+                <li>Give credit to everyone who contributes.</li>
+            </ul>
+
+            <h2>Team Members</h2>
+            <ul>
+                <li>Cristian Flores</li>
+                <li>Aurelio Garcia</li>
+                <li>Sankalp Kumar</li>
+                <li>Tathya Solanki</li>
+            </ul>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <p>Group 17 | Learn together. Build together.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
